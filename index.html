@@ -711,7 +711,191 @@
 .password-toggle i {
     font-size: 18px;
 }
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .logo-area {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .logo-text h1 {
+        font-size: 18px;
+    }
+    
+    .logo-text p {
+        font-size: 12px;
+    }
+    
+    .logout-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Stats Grid - 2x2 on mobile */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .stat-card {
+        padding: 15px;
+    }
+    
+    .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .stat-value {
+        font-size: 24px;
+    }
+    
+    .stat-label {
+        font-size: 12px;
+    }
+    
+    /* Form Grid - Stack on mobile */
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    /* DateTime Range - Stack */
+    .datetime-range {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    /* Table Header */
+    .table-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    
+    .search-box {
+        width: 100%;
+    }
+    
+    /* Table - Make scrollable horizontally */
+    .table-card {
+        padding: 15px;
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 800px; /* Forces horizontal scroll */
+    }
+    
+    th, td {
+        padding: 12px 8px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    
+    .license-key {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+    
+    .status-badge {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+    
+    .renew-btn {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    /* Login Card */
+    .login-card {
+        width: 90%;
+        padding: 25px;
+        margin: 20px auto;
+    }
+    
+    .login-title {
+        font-size: 24px;
+    }
+    
+    .login-subtitle {
+        font-size: 14px;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .modal-header h3 {
+        font-size: 20px;
+    }
+    
+    .modal-actions {
+        flex-direction: column;
+    }
+    
+    /* Create card */
+    .create-card {
+        padding: 20px;
+    }
+    
+    .section-title {
+        font-size: 16px;
+    }
+}
 
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr; /* 1 column on very small */
+    }
+    
+    .stat-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .stat-icon {
+        margin-bottom: 0;
+    }
+    
+    .stat-content {
+        flex: 1;
+    }
+    
+    .stat-value {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    
+    .login-logo-container {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .login-logo-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .input-group input {
+        padding: 14px 14px 14px 45px;
+        font-size: 14px;
+    }
+}
 /* Ensure no overlap */
 .password-input {
     padding-right: 50px !important;  /* Space for toggle button */
